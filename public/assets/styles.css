@@ -1,0 +1,76 @@
+body{
+  background: #0d1521;
+  font-family: tahoma;
+  color: #989898;
+}
+
+
+* {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+h1:before {
+    margin-right: 10px;
+    content: "";
+    display: inline-block;
+    background: url('/assets/logo.png') no-repeat;
+    width: 22px;
+    height: 30px;
+}
+
+input, button {
+  padding: 10px;
+  display: inline-block;
+}
+
+#todo-table{
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+#todo-table form:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+input[type="text"]{
+  width: 69%;
+  /*background:#181c22;*/
+  border: 0;
+  float: left;
+  font-size: 20px;
+  /*color: #989898;*/
+}
+
+button{
+  width: 30%;
+  float: left;
+  background: cadetblue;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #23282e;
+}
+
+li:hover{
+  text-decoration: line-through;
+}
